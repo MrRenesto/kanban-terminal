@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+kanban_terminal/__init__.py
+kanban_terminal/__main__.py
+kanban_terminal/app.py
+kanban_terminal/models.py
+kanban_terminal/storage.py
+kanban_terminal.egg-info/PKG-INFO
+kanban_terminal.egg-info/SOURCES.txt
+kanban_terminal.egg-info/dependency_links.txt
+kanban_terminal.egg-info/entry_points.txt
+kanban_terminal.egg-info/requires.txt
+kanban_terminal.egg-info/top_level.txt

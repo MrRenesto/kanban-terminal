@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: kanban-terminal
+Version: 0.1.0
+Summary: A colorful kanban board that runs inside the terminal.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: textual<2.0,>=0.61
+
+# Kanban Terminal
+
+A colorful terminal kanban board built with Python, `Textual`, and SQLite.
+
+## Features
+
+- Three fixed columns: `Todo`, `In Progress`, and `Done`
+- Keyboard-first task navigation
+- Colored card and column rendering inside the terminal
+- SQLite-backed persistence so tasks survive restarts
+
+## Run it
+
+```powershell
+python -m pip install -e .
+python -m kanban_terminal
+```
+
+To use a custom database path:
+
+```powershell
+python -m kanban_terminal --database .\data\kanban.db
+```
+
+## Controls
+
+- `a`: add a task to the active column
+- `left` / `right`: change the active column
+- `up` / `down`: change the selected task
+- `[` / `]`: move the selected task left or right
+- `q`: quit
+
+## Project layout
+
+- `kanban_terminal\app.py`: Textual application and UI logic
+- `kanban_terminal\storage.py`: SQLite persistence layer
+- `kanban_terminal\models.py`: shared task and status definitions
+
